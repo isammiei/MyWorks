@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频和视频</title>
+</head>
+<body>
+    <audio controls src="mp3/不错.mp3">
+        亲爱的，您的浏览器不支持audio标签，请升级您的浏览器哟 ^_^
+    </audio>
+    <br><br>
+    <audio controls src="mp3/不错哟.mp3" autoplay loop>
+        抱歉，您的浏览器不支持audio标签，请升级您的浏览器哟 ^_^
+    </audio>
+    <h2>audio子标签source</h2>
+    <audio controls>
+        <source src="audio/不错哟.mp3" type="audio/mpeg" />
+        <source src="audio/不错哟.ogg" type="audio/ogg" />
+        <source src="audio/不错哟.wav" type="audio/wav" />
+        亲爱的，您的浏览器不支持audio标签，请升级您的浏览器哟 ^_^
+    </audio>
+    <h2>video子标签source</h2>
+    <video controls width="500">
+        <source src="video/1.mp4" type="video/mp4" />
+        <source src="video/1.webm" type="video/webm" />
+        <source src="video/1.ogv" type="video/ogv" />
+        <source src="video/1.avi" type="video/avi" />
+        亲爱的，您的浏览器不支持video标签，请升级您的浏览器哟 ^_^
+    </video>
+</body>
+</html>
