@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单元素</title>
+</head>
+<body>
+    <h1>HTML的form表单</h1>
+    <form action="/user/login" method="POST">
+        <p>用户名：<input type="text" /></p>
+        <p>真实姓名：<input type="text" placeholder="请输入您的真实姓名 ..." /></p>
+        <p>所在城市：<input type="text" value="北京市海淀区" disabled /></p>
+        <p>请输入密码：<input type="password"  /></p>
+        
+        <p>
+            性别：
+            <label for=""><input type="radio" name="sex"    />男</label>
+            <label for=""><input type="radio" name="sex"  />女</label>
+            <label for=""><input type="radio" name="sex" checked>保密</label>   
+        </p>
+        
+        <p>
+            所在城市：
+            <input type="radio" name="city" id="beijing"    />
+            <label for="beijing">北京市</label>
+            <input type="radio" name="city" id="shanghai"    />
+            <label for="shanghai">上海市</label>
+            <input type="radio" name="city" id="shenzhen"    />
+            <label for="beijing">深圳市</label>
+        </p>
+
+        <p>
+            兴趣爱好：
+            <label for="">
+                <input type="checkbox" name="hobby" checked value="篮球"    />篮球
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="乒乓球"  />乒乓球
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="书法"    />书法
+            </label>
+            <label for="">
+                <input type="checkbox" name="hobby" value="跑步健身"    />跑步健身
+            </label>
+        </p>
+        
+        <p>
+            请选择省：
+            <select name="" id="">
+                <option value="湖北省">湖北省</option>
+                <option value="湖南省">湖南省</option>
+                <option value="安徽省">安徽省</option>
+                <option value="陕西省">陕西省</option>
+            </select>
+            市：
+            <select name="" id="">
+                <option value="西安市">西安市</option>
+            </select>
+            区：
+            <select name="" id="">
+                <option value="雁塔区">高新区</option>
+            </select>
+        </p>
+    
+        <p>
+            用户评论：<br>
+            <textarea name="" id="" cols="100" rows="10"></textarea>
+        </p>
+    
+        <p><button>我是一个button标签，是一个普通按钮</button></p>
+        <p><input type="button" value="我是一个普通按钮" /></p>
+        <p><input type="submit" value="提交表单信息" /></p>
+        <p><input type="reset" value="重 置" /></p>
+    
+    </form>
+</body>
+</html>
