@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子选择器</title>
+</head>
+<style>
+    /* 子选择器 ：两个标签为 父子元素 */
+    .box > p {
+      color: red;
+    }
+  
+    /* 后代选择器：不一定限制是子元素 */
+    .box p {
+      color: skyblue;
+    }
+  </style>
+<body>
+    <h1>元素关系选择器</h1>
+    <h2>子选择器</h2>
+  
+    <div class="box">
+      <p>我是div的子元素，也是一个段落标签</p>
+      <ul>
+        <li>
+          <p>我是一个段落标签</p>
+        </li>
+        <li>
+          <p>我是一个段落标签</p>
+        </li>
+      </ul>
+    </div>
+</body>
+</html>

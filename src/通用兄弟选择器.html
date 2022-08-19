@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通用兄弟选择器</title>
+</head>
+<style>
+    /* 通用兄弟选择器：a~b选择a元素之后所有同层级b元素 */
+    h3 ~ span {
+      color: aqua;
+    }
+  </style>
+<body>
+    <h3>通用兄弟选择器</h3>
+    <p>通用兄弟选择器~波浪线 a~b选择a元素之后所有同层级b元素</p>
+  
+    <span>我是一个span标签</span>
+    <span>我是一个span标签</span>
+    <span>我是一个span标签</span>
+    <span>我是一个span标签</span>
+    <p>段落</p>
+    <span>我是一个span标签</span>
+    <span>我是一个span标签</span>
+    <div>
+      <span>我是一个span标签</span>
+      <span>我是一个span标签</span>
+    </div>
+</body>
+</html>

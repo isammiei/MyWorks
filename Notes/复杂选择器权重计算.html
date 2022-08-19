@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复杂选择器权重计算</title>
+</head>
+<style>
+    /* id 权重 > class权重 > 标签权重 */
+  
+    /* （2,0,1）权重 */
+    #box1 #box2 p {
+      color: red;
+    }
+  
+    /* （2,1,2）权重 三个中，此复合样式权重最高，生效*/
+    #box1 div.box2 #box3 p {
+      color: green;
+    }
+  
+    /* （0,3,1）权重 */
+    .box1 .box2 .box3 p {
+      color: blue;
+    }
+  </style>
+<body>
+    <h2>复杂选择器权重计算</h2>
+
+    <div class="box1" id="box1">
+      <div class="box2" id="box2">
+        <div class="box3" id="box3">
+          <p>我是一个段落标签</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+</head>
+<style>
+    /* 选择有alt属性的img标签 */
+  img[alt] {
+    border: 5px solid skyblue;
+    border-radius: 12px;
+  }
+
+  /* 选择有alt属性是 "小米" 的img标签 */
+  img[alt="小米"] {
+    border: 10px solid red;
+  }
+
+  /* 选择有alt属性以 "智能" 开头的img标签 */
+  img[alt^="智能"] {
+    border: 10px solid salmon;
+  }
+   /* 选择alt属性以 "生活" 结尾的img标签 */
+   img[alt$="生活"] {
+    border: 10px solid pink;
+  }
+
+  /* 选择alt属性中包含 "的" 字的img标签 */
+  img[alt*="的"] {
+    border: 10px solid yellow;
+  }
+
+  /* 选择alt属性中有空格隔开的`小米家`字样的img标签 */
+  img[alt~="小米家"] {
+    border: 20px solid green;
+  }
+
+  /* 选择有alt属性以 “小米-” 开头的img标签 */
+  img[alt|="小米"] {
+    border: 15px solid black;
+  }
+</style>
+<body>
+    <h1>属性选择器</h1>
+
+    <h2>img[alt] 选择有alt属性的img标签</h2>
+    <img src="images/3.webp" alt="小米电视" />
+  
+    <h2>img[alt="小米"] 选择有alt属性是小米的img标签</h2>
+    <img src="images/3.webp" alt="小米" />
+  
+    <h2>img[alt^="智能"] 选择有alt属性以智能开头的img标签</h2>
+    <img src="images/3.webp" alt="智能电视：小米" />
+  
+    <h2>img[alt$="生活"] 选择alt属性以生活结尾的img标签</h2>
+    <img src="images/4.webp" alt="智能生活" />
+  
+    <h2>img[alt*="的"] 选择alt属性中包含 "的" 字的img标签</h2>
+    <img src="images/5.webp" alt="小米的净水器" />
+  
+    <h2>img[alt~="小米家"] 选择alt属性中有空格隔开的`小米家`字样的img标签</h2>
+    <img src="images/3.webp" alt="小米家 的电视" />
+  
+    <h2>img[alt|="小米"] 选择有alt属性以 “小米-” 开头的img标签</h2>
+    <img src="images/4.webp" alt="小米-净水器" />
+</body>
+</html>
