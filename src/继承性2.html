@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>继承性2</title>
+</head>
+<style>
+    /* （3,0,0） 注意：继承的选择器，权重可以看做是0，权重绝对没有选中的大*/
+    #box1 #box2 #box3 {
+        color: red;
+    }
+    /* （0,0,1）p标签是直接选中，权重最高，因此跟继承没关系 */
+    p {
+        color: skyblue;
+    }
+</style>
+<body>
+    <h2>在继承的情况下，选择器权重计算失效，而不是就近原则</h2>
+    <div class="box1" id="box1">
+        <div class="box2" id="box2">
+            <div class="box3" id="box3">
+                <p>我是段落标签</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
